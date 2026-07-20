@@ -1,0 +1,518 @@
+/* Sandy Springs Pressure Washing Pro — clean water / blue-teal theme */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1e293b;
+  line-height: 1.65;
+  background: #ffffff;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- Header / Nav ---------- */
+header.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #0b3556;
+  border-bottom: 3px solid #0891b2;
+}
+
+.nav-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+}
+
+.logo span {
+  color: #38bdf8;
+}
+
+nav.main-nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+nav.main-nav a {
+  color: #dbeafe;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+nav.main-nav a:hover {
+  color: #38bdf8;
+}
+
+.nav-cta {
+  background: #ea580c;
+  color: #ffffff !important;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+.nav-cta:hover {
+  background: #c2410c;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(135deg, #0b3556 0%, #0e4a73 100%);
+  color: #ffffff;
+  padding: 64px 0 56px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(56, 189, 248, 0.18);
+  color: #7dd3fc;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.hero p.lead {
+  font-size: 1.1rem;
+  color: #dbeafe;
+  margin-bottom: 26px;
+  max-width: 46ch;
+}
+
+.cta-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none !important;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: #ea580c;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover {
+  background: #c2410c;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #ffffff !important;
+  border: 2px solid #7dd3fc;
+}
+
+.btn-secondary:hover {
+  background: rgba(125, 211, 252, 0.12);
+}
+
+.hero-img {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- Sections ---------- */
+section {
+  padding: 56px 0;
+}
+
+section.alt {
+  background: #f3f7fa;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #0b3556;
+  margin-bottom: 18px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #0b3556;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 14px;
+  max-width: 72ch;
+}
+
+.section-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Cards / grids ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #dbe7ef;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(11, 53, 86, 0.06);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card img {
+  border-radius: 8px;
+  margin-bottom: 14px;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.trigger-list {
+  list-style: none;
+  margin-top: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.trigger-list li {
+  background: #ffffff;
+  border-left: 4px solid #0891b2;
+  padding: 14px 18px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(11, 53, 86, 0.06);
+}
+
+.step-list {
+  counter-reset: step;
+  list-style: none;
+  margin-top: 20px;
+  display: grid;
+  gap: 16px;
+}
+
+.step-list li {
+  position: relative;
+  padding-left: 52px;
+}
+
+.step-list li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  background: #0891b2;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+/* ---------- Pricing table ---------- */
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(11, 53, 86, 0.08);
+}
+
+.price-table th,
+.price-table td {
+  text-align: left;
+  padding: 14px 18px;
+  border-bottom: 1px solid #e5edf3;
+}
+
+.price-table th {
+  background: #0b3556;
+  color: #fff;
+  font-weight: 700;
+}
+
+.price-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ---------- FAQ ---------- */
+.faq-item {
+  background: #ffffff;
+  border: 1px solid #dbe7ef;
+  border-radius: 10px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.faq-item h3 {
+  color: #0b3556;
+}
+
+/* ---------- CTA banner ---------- */
+.cta-banner {
+  background: #ea580c;
+  color: #fff;
+  padding: 44px 0;
+  text-align: center;
+}
+
+.cta-banner h2 {
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.cta-banner p {
+  color: #ffedd5;
+  margin: 0 auto 20px;
+}
+
+.cta-banner .btn-primary {
+  background: #0b3556;
+}
+
+.cta-banner .btn-primary:hover {
+  background: #082944;
+}
+
+/* ---------- Services page blocks ---------- */
+.service-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: 40px 0;
+  border-bottom: 1px solid #e5edf3;
+}
+
+.service-block:last-child {
+  border-bottom: none;
+}
+
+.service-block img {
+  border-radius: 10px;
+}
+
+.service-block.reverse {
+  direction: rtl;
+}
+
+.service-block.reverse > * {
+  direction: ltr;
+}
+
+/* ---------- Contact page ---------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-info-box {
+  background: #ffffff;
+  border: 1px solid #dbe7ef;
+  border-radius: 10px;
+  padding: 26px;
+  margin-bottom: 18px;
+}
+
+form.lead-form {
+  background: #ffffff;
+  border: 1px solid #dbe7ef;
+  border-radius: 10px;
+  padding: 26px;
+  display: grid;
+  gap: 14px;
+}
+
+form.lead-form label {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: #0b3556;
+  display: block;
+  margin-bottom: 6px;
+}
+
+form.lead-form input,
+form.lead-form textarea,
+form.lead-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+form.lead-form button {
+  background: #ea580c;
+  color: #fff;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form.lead-form button:hover {
+  background: #c2410c;
+}
+
+/* ---------- Footer ---------- */
+footer.site-footer {
+  background: #0b3556;
+  color: #cbd5e1;
+  padding: 44px 0 26px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 26px;
+}
+
+.footer-grid h3 {
+  color: #ffffff;
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+
+.footer-grid p,
+.footer-grid li {
+  color: #a8c0d4;
+  font-size: 0.94rem;
+}
+
+.footer-grid ul {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.footer-grid a {
+  color: #a8c0d4;
+  text-decoration: none;
+}
+
+.footer-grid a:hover {
+  color: #7dd3fc;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1c4a6e;
+  padding-top: 18px;
+  font-size: 0.85rem;
+  color: #7d96ab;
+  text-align: center;
+}
+
+/* ---------- Utility ---------- */
+.tel-link {
+  color: #38bdf8;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px) {
+  .hero-grid,
+  .card-grid,
+  .service-block,
+  .service-block.reverse,
+  .contact-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  nav.main-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+}
